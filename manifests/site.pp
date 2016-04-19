@@ -87,4 +87,8 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  # organization common
+  include rootandflow::environment
+
 }
