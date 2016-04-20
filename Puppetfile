@@ -65,4 +65,7 @@ github "xquartz",     "1.2.1"
 # github "postgresql",  "4.0.1"
 # github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
+
+github "osx",         "2.8.0"
+github "iterm2",      "1.2.6", :repo => "remy-actual/puppet-iterm2"
 github "firefox",     "1.2.3"
