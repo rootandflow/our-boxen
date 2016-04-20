@@ -10,6 +10,14 @@ class people::remy_actual::term {
   include iterm2::colors::solarized_light
   include iterm2::colors::solarized_dark
 
+  # fonts
+  $fonts="/Users/${::boxen_user}/Library/Fonts"
+  file { "Inconsolata-dz\sfor\sPowerline.otf":
+    ensure => 'present',
+    path   => "${fonts}/Inconsolata-dz\sfor\sPowerline.otf",
+    source => "/Users/${::boxen_user}/dotfiles/term/fonts/InconsolataDz/Inconsolata-dz\sfor\sPowerline.otf"
+  }
+
   # set preferences from file
 
   $prefs_path = "/Users/${::boxen_user}/dotfiles/term"
