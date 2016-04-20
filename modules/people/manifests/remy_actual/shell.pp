@@ -17,7 +17,4 @@ class people::remy_actual::shell {
     require => Package['zsh'],
   }
 
-  include iterm2::stable
-# include iterm2::colors::solarized_light
-
 }
